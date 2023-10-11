@@ -8,11 +8,18 @@
             "Dravenshorst\\PhpunitCommitReminder\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Dravenshorst\\PhpunitCommitReminder\\Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "Daniel Ravenshorst",
             "email": "daniel.ravenshorst@dealerdirect.com"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "phpunit/phpunit": "^10.4"
+    }
 }
