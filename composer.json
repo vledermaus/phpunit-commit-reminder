@@ -1,6 +1,6 @@
 {
     "name": "vledermaus/phpunit-commit-reminder",
-    "description": "phpunit-commit-reminder is a PHPUnit extension that prompts developers to commit code changes at the end of all test runs when there are no failures. It enhances PHPUnit by providing an automated reminder to commit changes, ensuring that code is committed in a known-good state after successful testing.",
+    "description": "phpunit-commit-reminder: A PHPUnit extension that reminds developers to commit code changes after successful tests, promoting code stability.",
     "keywords": [
         "phpunit",
         "commit",
