@@ -1,3 +1,5 @@
 /vendor/
 /.phpunit.cache/
+/.vscode/
 composer.lock
+.php-cs-fixer.cache
