@@ -4,7 +4,7 @@ This is a simple extension that runs after a successful test run and reminds you
 
 This is useful if you are using a TDD approach, after fixing a failing test, you can be reminded to commit your changes.
 
-The script can also commit and push your changes for you with a prompt.
+The extension can also commit and push your changes for you with a prompt.
 
 ## Installation
 
