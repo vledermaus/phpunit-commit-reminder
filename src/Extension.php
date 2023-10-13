@@ -15,7 +15,7 @@ final class Extension implements ExtensionInterface
 {
     public function bootstrap(Configuration $configuration, Facade $facade, ParameterCollection $parameters): void
     {
-        if ($configuration->noOutput() || empty($_SERVER['PWD']) || $configuration->noExtensions()) {
+        if (empty($_SERVER['PWD']) || $configuration->noExtensions()) {
             return;
         }
 
