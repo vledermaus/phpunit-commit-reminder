@@ -1,14 +1,12 @@
 # PHPUnit Commit Reminder
 
-This is a simple extension that runs after a successful test run and reminds you to commit your changes.
+PHPUnit Commit Reminder is a convenient extension that streamlines your workflow by gently nudging you to commit your changes after a successful test run. It's particularly handy if you follow the Test-Driven Development (TDD) approach, ensuring that your codebase stays well-organized and up-to-date.
 
-This is useful if you are using a TDD approach, after fixing a failing test, you can be reminded to commit your changes.
-
-The extension can also commit and push your changes for you with a prompt.
+This extension can even handle the committing and pushing of your changes for you, saving you time and keeping your version control in sync.
 
 ## Installation
 
-Install the extension via composer.
+You can easily integrate PHPUnit Commit Reminder into your project by using Composer. Here's how to do it:
 
 ```bash
 composer require --dev vledermaus/phpunit-commit-reminder
@@ -16,7 +14,7 @@ composer require --dev vledermaus/phpunit-commit-reminder
 
 ## Configuration
 
-Add the extension to your `phpunit.xml` file.
+To activate the extension, add it to your phpunit.xml file as an extension. This configuration ensures that PHPUnit Commit Reminder runs automatically after your tests. Here's an example of how to do this:
 
 ```xml
 <extensions>
@@ -26,13 +24,19 @@ Add the extension to your `phpunit.xml` file.
 
 ## Usage
 
-Run your tests as usual.
+Using PHPUnit Commit Reminder is straightforward. Simply run your PHPUnit tests as you usually do:
 
 ```bash
 ./vendor/bin/phpunit
 ```
 
-When all tests pass, and there are changes in your working directory, you will be asked if you want to commit them.
+Or, with laravel:
+
+```bash
+php artisan test
+```
+
+After the tests complete successfully, and there are uncommitted changes in your working directory, the extension will prompt you to commit them. This helps you maintain a clean and organized codebase. Here's an example of the prompt:
 
 ```bash
 
@@ -59,3 +63,16 @@ Do you want to push them? [y/N]
 
 🚀  Changes pushed! 🚀
 ```
+
+With PHPUnit Commit Reminder, you can stay focused on your code and let it handle the version control, making your workflow smoother and more efficient.
+
+Give it a try and enjoy a more organized and streamlined development process!
+
+## Contributing
+
+Contributions are welcome! If you have suggestions, bug reports, or want to contribute to the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes.
+4. Submit a pull request.
