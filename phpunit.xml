@@ -20,4 +20,8 @@
             <directory>src</directory>
         </include>
     </source>
+
+    <extensions>
+        <bootstrap class="Vledermaus\PHPUnitCommitReminder\Extension"></bootstrap>
+    </extensions>
 </phpunit>
