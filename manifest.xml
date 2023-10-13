@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phar xmlns="https://phar.io/xml/manifest/1.0">
+  <contains name="vledermaus/phpunit-commit-reminder" version="1.0.0" type="extension">
+    <extension for="phpunit/phpunit" compatible="^10.0"/>
+  </contains>
+
+  <requires>
+    <php version="^8.1"/>
+  </requires>
+
+  <copyright>
+    <author name="Daniel Ravenshorst" email="d.ravenshorst@dealerdirect.com"/>
+    <license type="MIT" />
+  </copyright>
+</phar>
