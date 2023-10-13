@@ -1,16 +1,22 @@
 {
-    "name": "dravenshorst/phpunit-commit-reminder",
+    "name": "vledermaus/phpunit-commit-reminder",
     "description": "phpunit-commit-reminder is a PHPUnit extension that prompts developers to commit code changes at the end of all test runs when there are no failures. It enhances PHPUnit by providing an automated reminder to commit changes, ensuring that code is committed in a known-good state after successful testing.",
+    "keywords": [
+        "phpunit",
+        "commit",
+        "reminder",
+        "extension"
+    ],
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Dravenshorst\\PhpunitCommitReminder\\": "src/"
+            "Vledermaus\\PHPUnitCommitReminder\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Dravenshorst\\PhpunitCommitReminder\\Tests\\": "tests/"
+            "Vledermaus\\PHPUnitCommitReminder\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -20,6 +26,10 @@
         }
     ],
     "require-dev": {
-        "phpunit/phpunit": "^10.4"
+        "phpunit/phpunit": "^10.4",
+        "friendsofphp/php-cs-fixer": "^3.34"
+    },
+    "require": {
+        "czproject/git-php": "^4.2"
     }
 }
