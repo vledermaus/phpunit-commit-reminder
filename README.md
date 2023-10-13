@@ -35,22 +35,27 @@ Run your tests as usual.
 When all tests pass, and there are changes in your working directory, you will be asked if you want to commit them.
 
 ```bash
-...
 
-Time: 00:03.430, Memory: 78.50 MB
+......                                                              6 / 6 (100%)
 
-OK (192 tests, 517 assertions)
+Time: 00:00.007, Memory: 8.00 MB
+
+OK (6 tests, 9 assertions)
 
 
-Changes detected on branch 'master'.
+🚨 You have uncommitted changes! 🚨
 
-Do you want to commit your changes on branch 'master'? [y/N]
-> yes
 
-Enter commit message:
-> My commit message
+Do you want to commit them (this will add all changes)? [y/N]
+> y
 
-Changes committed successfully!
+Please enter a commit message:
+> My awesome commit message!
 
-Don't forget to push your changes to remote!
+🎉  Changes committed! 🎉
+
+Do you want to push them? [y/N]
+> y
+
+🚀  Changes pushed! 🚀
 ```
